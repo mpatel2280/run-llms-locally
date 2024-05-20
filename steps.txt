@@ -1,0 +1,63 @@
+curl -fsSL https://ollama.com/install.sh | sh
+
+Select any of your choice library - https://ollama.com/library
+E.g gemma 2B, llama3 8B etc... 
+--------------------------------------------------------------------------------
+If you are going with Gemma 2B then....
+
+https://ollama.com/library/gemma
+
+ollama pull gemma:2b
+
+ollama run gemma:2b
+
+type simple qustion like, what is javascript, what is python etc
+
+exit with /bye 
+
+--------------------------------------------------------------------------------
+
+If you are going with llama3 8B then....
+
+https://ollama.com/library/llama3
+
+ollama pull llama3
+
+ollama run llama3
+
+type simple qustion like, what is javascript, what is python etc
+
+exit with /bye 
+
+--------------------------------------------------------------------------------
+Using the Ollama Python Library for local development 
+
+pip install ollama 
+
+if any error with above command then go with --break-system-packages
+
+pip install ollama --break-system-packages
+
+python3  script1.py > output1.txt 
+
+Or curl command
+
+curl http://localhost:11434/api/generate -d '{
+  "model": "gemma:2b",
+  "prompt":"What is javascript?"
+}'
+
+Imp command
+
+Stop Ollama 
+identify process and kill them... 
+
+pgrep ollama
+12345
+
+kill 12345
+
+Start Ollama
+./ollama serve
+
+--------------------------------------------------------------------------------
