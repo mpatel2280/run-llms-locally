@@ -1,4 +1,9 @@
 https://www.kdnuggets.com/ollama-tutorial-running-llms-locally-made-super-simple
+https://www.kdnuggets.com/run-an-llm-locally-with-lm-studio
 https://github.com/ollama/ollama
+https://github.com/ollama/ollama/blob/main/docs/development.md
 https://ollama.com/download/linux
 https://ollama.com/library
+
+
+local env: http://127.0.0.1:11434/
